@@ -5,8 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bills to Pay</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="header">
+            <h1><img src="logo.png"></h1>
+            <button>Nova Conta</button>
+        </div>
+    </header>
     
+    <main>
+        <div class="bills-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Vencimento</th>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                        <th>Pagar</th>
+                        <th>Editar</th>
+                        <th>Excluir</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="modal">
+            <h3 class="modal-title">
+
+            </h3>
+            <form>
+                <label for="due-date">Vencimento</label>
+                <input type="text" id="due-date" required>
+
+                <label for="description">Descrição</label>
+                <input type="text" id="description" required>
+
+                <label for="bill-value">Valor</label>
+                <input type="text" id="bill-value" required>
+
+                <button class="btnActionModal"></button>
+                <button class="btnCloseModal">Cancelar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <img src="">
+        <p class="copyright">&copy; Copyright Bills to Pay - 2022</p>
+    </footer>
 </body>
 </html>
