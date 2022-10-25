@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bills to Pay</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="header">
-            <h1><img src="logo.png"></h1>
-            <button>Nova Conta</button>
+            <img src="logo.jpg">
+            <p>Bills to Pay</p>
+            <hr>
+            <button class="btn-new-bill" onclick="openModal('new')">Nova Conta</button>
         </div>
     </header>
     
@@ -34,23 +37,25 @@
             </table>
         </div>
 
-        <div class="modal">
-            <h3 class="modal-title">
+        <div class="modal-container">
+            <div class="modal">
+                <span class="modal-title">Nova Conta</span>
+                <form>
+                    <label for="due-date">Vencimento</label>
+                    <input type="date" id="due-date" class="modal-input" required>
 
-            </h3>
-            <form>
-                <label for="due-date">Vencimento</label>
-                <input type="text" id="due-date" required>
+                    <label for="bill-value">Valor</label>
+                    <input type="text" id="bill-value" class="modal-input" required>
 
-                <label for="description">Descrição</label>
-                <input type="text" id="description" required>
+                    <label for="description">Descrição</label>
+                    <input type="text" id="description" class="modal-input" required>
 
-                <label for="bill-value">Valor</label>
-                <input type="text" id="bill-value" required>
-
-                <button class="btnActionModal"></button>
-                <button class="btnCloseModal">Cancelar</button>
-            </form>
+                    <div class="modal-btns">
+                        <button class="btn-action-modal">Salvar</button>
+                        <button class="btn-close-modal" onclick="closeModal()">Cancelar</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
 
@@ -58,5 +63,6 @@
         <img src="">
         <p class="copyright">&copy; Copyright Bills to Pay - 2022</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
