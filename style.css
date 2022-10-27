@@ -111,6 +111,12 @@ tbody tr td.acao {
     text-align: center;
 }
 
+tbody button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
 .bx {
     font-size: 20px;
 }
