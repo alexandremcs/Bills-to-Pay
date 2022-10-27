@@ -15,7 +15,7 @@
             <img src="logo.jpg">
             <p>Bills to Pay</p>
             <hr>
-            <button class="btn-new-bill" onclick="openModal('new')">Nova Conta</button>
+            <button class="btn-new-bill" onclick="openModal()">Nova Conta</button>
         </div>
     </header>
     
@@ -52,15 +52,15 @@
                     <label for="due-date">Vencimento</label>
                     <input type="date" id="due-date" class="modal-input" required>
 
-                    <label for="value">Valor</label>
-                    <input type="text" id="value" class="modal-input" required>
+                    <label for="bill-value">Valor</label>
+                    <input type="text" id="bill-value" class="modal-input" required>
 
                     <label for="description">Descrição</label>
                     <input type="text" id="description" class="modal-input" required>
 
                     <div class="modal-btns">
-                        <button id="save" class="btn-action-modal">Salvar</button>
-                        <button id="cancel" class="btn-close-modal" onclick="closeModal()">Cancelar</button>
+                        <button id="btn-save" class="btn-action-modal">Salvar</button>
+                        <button id="btn-cancel" class="btn-close-modal" onclick="closeModal()">Cancelar</button>
                     </div>
                 </form>
             </div>

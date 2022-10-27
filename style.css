@@ -111,10 +111,18 @@ tbody tr td.acao {
     text-align: center;
 }
 
+tbody tr:hover {
+    background: #f8f8f8;
+}
+
 tbody button {
     border: none;
     background: none;
     cursor: pointer;
+}
+
+tbody button:hover {
+    color: rgb(18, 76, 161);
 }
 
 .bx {
