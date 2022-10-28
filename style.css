@@ -60,7 +60,7 @@ main {
 
 .bills-table {
     position: relative;
-	width: 80%;
+	width: 60%;
     height:inherit;
     overflow:auto;
 	margin: auto;
@@ -102,15 +102,6 @@ tbody tr {
     margin-bottom: 50px;
 }
 
-thead tr th.acao {
-    width: 100px!important;
-    text-align: center;
-}
-
-tbody tr td.acao {
-    text-align: center;
-}
-
 tbody tr:hover {
     background: #f8f8f8;
 }
@@ -125,6 +116,14 @@ tbody button:hover {
     color: rgb(18, 76, 161);
 }
 
+.bills-table-dueDate {
+    width: 20%;
+}
+
+.bills-table-billValue {
+    width: 20%;
+}
+
 .bx {
     font-size: 20px;
 }
@@ -134,7 +133,7 @@ tbody button:hover {
 }
 
 /* ===================
-    End - Modal Style 
+    End - Table Style 
    =================== */
 
 /* =====================
@@ -252,4 +251,5 @@ form label, legend {
 footer {
     text-align: center;
     padding: 40px 0;
+    font-size: 12px;
 }

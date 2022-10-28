@@ -38,12 +38,9 @@ function insertBill (bill, index) {
     let dateFormated = ((date.getDate() + 1)) + "-" + ((date.getMonth() + 1)) + "-" + date.getFullYear(); 
 
     tr.innerHTML = `        
-        <td>${dateFormated}</td>
+        <td class="bills-table-dueDate">${dateFormated}</td>        
+        <td class="bills-table-billValue">R$${bill.billValue}</td>
         <td>${bill.description}</td>
-        <td>R$${bill.billValue}</td>
-        <td class="bills-table-action">
-            <button onclick="payBill(${index})"><i class='bx bxs-wallet'></i></button>
-        </td>
         <td class="bills-table-action">
             <button onclick="editBill(${index})"><i class='bx bxs-edit'></i></button>
         </td>
