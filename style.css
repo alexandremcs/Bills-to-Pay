@@ -233,6 +233,10 @@ form label, legend {
     transition: 0.2s;
 }
 
+#description {
+    width: 80%;
+}
+
 @media (max-width: 500px) {
     .modal {
         padding: 10px;
